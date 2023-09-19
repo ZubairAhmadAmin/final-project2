@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+nav{
+    background-color: blue;
+    position: fixed;
+    background-attachment: fixed;
+}
+.container a{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+
+}
+.container img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+/* home page style ................................................................................ */
+
+/* https://github.com/ZubairAhmadAmin/Final-Project */
+
+/* https://github.com/ZubairAhmadAmin/Final-Project */
+
+   .home{
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 90vh;
+  }
+  .home-title{
+    padding: 5rem 8rem;
+  }
+  .the-best{
+    background-color: #363d42;
+    border-radius: 30px 5px 30px;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    width: max-content;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+  }
+  .the-best>span{
+    z-index: 2;
+    word-spacing: 4px;
+    padding: 5px;
+  }
+  .the-best>div{
+    position: absolute;
+    background-color: orange;
+    width: 355px;
+    height: 80%;
+    left: 8px;
+    border-radius: 30px 5px 30px;
+
+  }
+  .home-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+  }
+  .desc{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 600px;
+    text-transform: none;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    width: 100%;
+    color: rgb(0, 0, 255);
+  }
+  .span-text1{
+    color: black;
+  }
+  .span-text2{
+    color: red;
+  }
+  .span-text3{
+    color: green;
+  }
+
+  /* search page style ......................................................................... */
+
+.search{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.left-h{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+.left-h h3{
+    color: blue;
+}
+.search-box{
+    margin-top: 200px;
+}
+.search-item{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.search-item input{
+    width: 400px;
+    height: 50px;
+    border-radius: 30px 0px 30px;
+    border: 2px solid blue;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.search-item button{
+    width: 100px;
+    height: 50px;
+    border-radius: 30px 0px 30px;
+    
+}
+.right-h{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+.right-h div{
+    width: 100%;
+    position: absolute;
+    margin-top: 80px;
+}
+.right-h img{
+    width: 220px;
+    height: 150px;
+    padding: 20px;
+}
+
+/* contact page style .......................................................................... */
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1b2430;
+  }
+  .left{
+    width: 55%;
+    height: 100%;
+  }
+  .left img{
+    width: 100%;
+    height: 630px;
+    background-color: #1b2430;
+  }
+  .right{
+    width: 45%;
+    height: 100%;
+  }
+  .right form div {
+    width: 600px;
+    border-radius: 30px 0px 30px;
+  }
+  .right form input{
+    border-radius: 10px;
+    background-color: lightgray;
+    border-radius: 30px 0px 30px;
+  }
+  .right form textarea{
+    border-radius: 10px;
+    background-color: lightgray;
+    border-radius: 30px 0px 30px;
+  }
+  .right form label{
+    color: blue;
+    font-weight: 600;
+  }
+  .right button{
+    margin-left: 450px;
+    border-radius: 30px 0px 30px;
+  }
