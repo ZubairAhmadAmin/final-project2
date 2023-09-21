@@ -1,9 +1,29 @@
-@extends('Navbar')
-
+@extends('layout')
 @section('contant')
-<!-- home page ............................................................................. -->
-<link rel="stylesheet" href="app.css">
+<nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container">
+            <img class="img" src="{{URL('images/logo4.jpg')}}" alt="">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#search">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/register">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/login">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
+<!-- home page .................................................................................. -->
 <section class="home" id="home">
     <div class='home-title'>
         <div class='the-best'>
@@ -61,13 +81,13 @@
     <div class='right'>
         <form>
             <div class="form-control p-4">
-                <label class="form-label" for="name-input">Your Name</label>
-                <input class="form-control" type='text'></input>
-                <label class="form-label mt-3" for="email-input">Email</label>
-                <input class="form-control" type='text'></input>
-                <label class="form-label mt-3" for="message-area">Message</label>
+                <label class="form-label" class="form-label" for="name-input">Your Name</label>
+                <input class="form-input" class="form-control" type='text'>
+                <label class="form-label" class="form-label mt-3" for="email-input">Email</label>
+                <input class="form-input" class="form-control" type='text'>
+                <label class="form-label" class="form-label mt-3" for="message-area">Message</label>
                 <textarea class="form-control" name="message" id="mess" cols="60" rows="5"></textarea>
-                <button class="btn btn-primary btn-lg mt-3">Send</button>
+                <button type="button" class="btn btn-primary mt-4">Search</button>
             </div>
         </form>
     </div>

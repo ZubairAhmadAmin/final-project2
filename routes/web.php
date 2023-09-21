@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CustomAuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('navbar', function () {
-    return view('Navbar');
-});
+// Route::get('navbar', function () {
+//     return view('Navbar');
+// });
 Route::get('/', function () {
     return view('Index');
 });
+// Route::get('register', function () {
+//     return view('auth.register');
+// });
+// Route::get('login', function () {
+//     return view('Login');
+// });
+// Route::get('register', function () {
+//     return view('Register');
+// });
+Route::get('/login', [CustomAuthController::class, 'login']);
+Route::get('/register', [CustomAuthController::class, 'registration']);
+Route::post('/register-user', [CustomAuthController::class, 'registerUser'])->name('register-user');
+Route::post('/login-user', [CustomAuthController::class, 'loginUser'])->name('login-user');
+Route::get('/dashboard', [CustomAuthController::class, 'Dashboard']);
+// // Route::post('/save', [UserController::class, 'save']);
