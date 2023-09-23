@@ -1,7 +1,17 @@
 nav{
     background-color: blue;
-    position: fixed;
+    /* position: fixed; */
     background-attachment: fixed;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .container a{
     color: white;

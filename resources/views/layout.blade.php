@@ -23,7 +23,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </head>
 <body>
-    <link href="Navbar.blade.php">
+    <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container">
+            <img class="img" src="{{URL('images/logo4.jpg')}}" alt="">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#search">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/register">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/login">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     @yield('contant')
 </body>
 </html>

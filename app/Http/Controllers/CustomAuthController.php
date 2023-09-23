@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Symfony\Component\HttpFoundation\Session\Session;
 
@@ -61,6 +62,6 @@ class CustomAuthController extends Controller
     }
 
     public function Dashboard () {
-        echo "welcome to dashboard";
+        return view('dashboard');
     }
 }

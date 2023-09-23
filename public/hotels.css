@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* div.card{
+
+} */
+.card button{
+    background-color: rgb(88, 13, 13);
+}
+.card button a{
+    color: yellow;
+    text-decoration: none;
+}
+.card button:hover{
+    background-color: none;
+}

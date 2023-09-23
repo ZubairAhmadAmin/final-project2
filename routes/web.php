@@ -21,6 +21,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('Index');
 });
+Route::get('hotels', function () {
+    return view('hotels');
+});
+Route::get('hotel', function () {
+    return view('myHotel');
+});
 // Route::get('register', function () {
 //     return view('auth.register');
 // });
@@ -30,9 +36,9 @@ Route::get('/', function () {
 // Route::get('register', function () {
 //     return view('Register');
 // });
-Route::get('/login', [CustomAuthController::class, 'login']);
-Route::get('/register', [CustomAuthController::class, 'registration']);
+Route::get('/login', [CustomAuthController::class, 'login']) ->middleware('alreadyLoggedIn');
+Route::get('/register', [CustomAuthController::class, 'registration']) ->middleware('alreadyLoggedIn');
 Route::post('/register-user', [CustomAuthController::class, 'registerUser'])->name('register-user');
 Route::post('/login-user', [CustomAuthController::class, 'loginUser'])->name('login-user');
-Route::get('/dashboard', [CustomAuthController::class, 'Dashboard']);
+Route::get('/dashboard', [CustomAuthController::class, 'Dashboard'])->middleware('isLoggedIn');
 // // Route::post('/save', [UserController::class, 'save']);
