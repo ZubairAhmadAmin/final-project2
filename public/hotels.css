@@ -9,6 +9,7 @@
 } */
 .card button{
     background-color: rgb(88, 13, 13);
+    border-radius: 30px 0px 30px;
 }
 .card button a{
     color: yellow;
